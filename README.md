@@ -17,6 +17,38 @@ where the path is relative to the nextjs project base dir
 request params are in the brackets in the file name
 such as [id].ts for the put, patch, delete
 
+Always set env args before run
+source ../../aws-resources/localhost-mac-js.sh
 npm run dev
 https://x.com/i/grok/share/FbAxKD1cMUeavPYluRB9wQwTk
 
+your-react-app -> basic-content-frontend
+jsbackends base
+
+/////// deprecated
+/////// npx create-react-app basic-content-frontend --template typescript
+/////// If it creates errors 
+///////https://github.com/facebook/create-react-app/issues/13873
+///////cd basic-content-frontend
+///////npm install --save-dev @testing-library/react@latest
+///////npm install web-vitals
+///////npm start
+////// deprecated
+
+npm create vite@latest basic-content-frontend -- --template react-ts
+cd basic-content-frontend
+npm install axios @mui/material @emotion/react @emotion/styled
+npm install react-router-dom
+npm install @types/node;
+rm package-lock.json
+npm update --save
+npm install
+npm run dev
+
+Cors should be implemented on a service by service basis with request response logic
+
+The journey to it working was messy, but the middleware.ts support is flaky 
+https://x.com/i/grok/share/SsDXfUOepxExefOegMmpRyIZA
+
+The front end from here on in needs some expansion 
+wip
