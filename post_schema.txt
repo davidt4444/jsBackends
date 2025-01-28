@@ -1,0 +1,25 @@
+Post{
+    id	integer($int32)
+    title*	string
+    maxLength: 200
+    minLength: 5
+    content*	string
+    maxLength: 10000
+    minLength: 0
+    createdAt	string($date-time)
+    author	string
+    maxLength: 200
+    minLength: 0
+    nullable: true
+    category	string
+    maxLength: 100
+    minLength: 0
+    nullable: true
+    updatedAt	string($date-time)
+    nullable: true
+    likesCount	integer($int32)
+    authorId	integer($int32)
+    nullable: true
+    isPublished	boolean
+    views	integer($int32)
+}
