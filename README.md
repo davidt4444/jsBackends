@@ -50,5 +50,5 @@ Cors should be implemented on a service by service basis with request response l
 The journey to it working was messy, but the middleware.ts support is flaky 
 https://x.com/i/grok/share/SsDXfUOepxExefOegMmpRyIZA
 
-The front end from here on in needs some expansion 
-wip
+I rewrote some of the front end on my own as a departure from the Grok returns, because it was easier and came closer to the workflow that I wanted.
+

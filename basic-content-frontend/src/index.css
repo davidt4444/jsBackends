@@ -12,6 +12,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+#post {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color:white;
+}
 
 a {
   font-weight: 500;

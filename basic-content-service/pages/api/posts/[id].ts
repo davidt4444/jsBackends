@@ -10,7 +10,15 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   const { id } = req.query;
   const postId = Number(id);
 
-  if (req.method === 'PUT') {
+  if (req.method === 'GET') {
+    const post = await prisma.post.findUnique(
+      {
+        where: { id: postId },
+      }
+    );
+    res.json(post);
+  } 
+  else if (req.method === 'PUT') {
     try {
       const { title, content, author, category, isPublished, likesCount, views } = req.body;
       
@@ -73,6 +81,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     } catch (error) {
       res.status(500).json({ error: "Failed to delete the post." });
     }
+  }
+  else if (req.method === 'OPTIONS') {
+    res.status(200).end();
+    // return;
   }
   else {
     res.status(405).json({ message: 'Method Not Allowed' });

@@ -5,7 +5,7 @@ import App from './App.tsx'
 import axios from 'axios';
 
 //for vitae use import.meta.env for create react app use process.env
-axios.defaults.baseURL = import.meta.env.REACT_APP_API_BASE_URL || 'http://localhost:3000/api';
+axios.defaults.baseURL = import.meta.env.REACT_APP_API_BASE_URL || 'http://localhost:3000';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

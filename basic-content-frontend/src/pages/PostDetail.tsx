@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+// import axios from 'axios';
+import api from '../utils/api';
 import { useParams } from 'react-router-dom'; // If using react-router
 import { Post } from '../types';
 
@@ -9,7 +10,7 @@ const PostDetail: React.FC = () => {
 
   useEffect(() => {
     const fetchPost = async () => {
-      const response = await axios.get(`/api/posts/${id}`);
+      const response = await api.get(`/api/posts/${id}`);
       setPost(response.data);
     };
     fetchPost();
@@ -20,6 +21,8 @@ const PostDetail: React.FC = () => {
       {post && (
         <>
           <h2>{post.title}</h2>
+          By {post.author}<br />
+          Published {post.createdAt}
           <p>{post.content}</p>
         </>
       )}

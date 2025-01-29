@@ -37,13 +37,16 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Post from './pages/Post';
 import PostDetail from './pages/PostDetail';
+import Admin from './pages/Admin';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/post" element={<Post />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/admin" element={<Admin />} />
+      <Route path="/post" element={<Post />} />
+        <Route path="/postEdit/:id" element={<Post />} />
         <Route path="/post/:id" element={<PostDetail />} />
       </Routes>
     </Router>
