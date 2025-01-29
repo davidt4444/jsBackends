@@ -7,7 +7,7 @@ npm install -D prisma
 npx prisma init
 
 set environment variable for database
-source ../../aws-resources/localhost-mac-js.sh
+source ../../../aws-resources/localhost-mac-js.sh
 npx prisma migrate dev --name init
 
 Remember the routes are in the tailwind config 
@@ -18,7 +18,7 @@ request params are in the brackets in the file name
 such as [id].ts for the put, patch, delete
 
 Always set env args before run
-source ../../aws-resources/localhost-mac-js.sh
+source ../../../aws-resources/localhost-mac-js.sh
 npm run dev
 https://x.com/i/grok/share/FbAxKD1cMUeavPYluRB9wQwTk
 

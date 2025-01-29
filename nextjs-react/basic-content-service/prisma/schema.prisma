@@ -13,7 +13,7 @@
 //  url      = env("DATABASE_URL")
 //}
 //run the command below to set the env variable JS_DATABASE_URL
-//source ../../aws-resources/localhost-mac-js.sh
+//source ../../../aws-resources/localhost-mac-js.sh
 //use JS_DATABASE_URL instead of DATABASE_URL
 datasource db {
   provider = "mysql"
