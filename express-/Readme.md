@@ -19,3 +19,4 @@ Add reference to the app.js
 sequelize the database
 node app.js
 
+https://x.com/i/grok/share/xrOQ38zrOMuN9WqU2RiHQE3Gu
