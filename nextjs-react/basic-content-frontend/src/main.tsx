@@ -9,6 +9,9 @@ axios.defaults.baseURL = import.meta.env.REACT_APP_API_BASE_URL || 'http://local
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
+    <h1>React Crud App</h1>
+    <a href="http://localhost:5173/">Home</a> | 
+    <a href="http://localhost:5173/admin">Admin</a> 
     <App />
   </StrictMode>,
 )
