@@ -26,6 +26,7 @@ generator client {
 
 model Post {
   id          Int      @id @default(autoincrement())
+  uniqueId   String   @default(uuid())
   title       String   @db.VarChar(200)
   content     String   @db.Text
   createdAt   DateTime @default(now())

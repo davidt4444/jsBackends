@@ -10,6 +10,13 @@ set environment variable for database
 source ../../../aws-resources/localhost-mac-js.sh
 npx prisma migrate dev --name init
 
+To update
+https://kristenkinnearohlmann.dev/prisma-add-field-to-model/
+Update schema.prisma
+npx prisma db push
+npx prisma migrate dev
+npx prisma generate
+
 Remember the routes are in the tailwind config 
 So for /api/posts the index.ts has to be in 
 ./pages/api/posts as defined in the config
