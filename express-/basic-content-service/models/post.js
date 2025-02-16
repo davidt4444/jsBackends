@@ -1,4 +1,4 @@
-const Sequelize = require('sequelize');
+const {Sequelize, DataTypes} = require('sequelize');
 const sequelize = require('../database');
 
 const Post = sequelize.define('Post', {
@@ -6,6 +6,11 @@ const Post = sequelize.define('Post', {
         type: Sequelize.INTEGER,
         primaryKey: true,
         autoIncrement: true
+    },
+    uniqueId: {
+        type: DataTypes.UUID,
+        defaultValue: Sequelize.UUIDV4,
+        allowNull: false
     },
     title: {
         type: Sequelize.STRING,
