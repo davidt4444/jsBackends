@@ -1,6 +1,7 @@
 -- CreateTable
-CREATE TABLE `posts` (
+CREATE TABLE `JPost` (
     `id` INTEGER NOT NULL AUTO_INCREMENT,
+    `uniqueId` VARCHAR(191) NOT NULL,
     `title` VARCHAR(200) NOT NULL,
     `content` TEXT NOT NULL,
     `createdAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),

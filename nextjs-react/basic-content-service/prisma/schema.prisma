@@ -22,8 +22,9 @@ datasource db {
 
 generator client {
   provider = "prisma-client-js"
+  previewFeatures = ["typedSql"]
 }
-
+ 
 model Post {
   id          Int      @id @default(autoincrement())
   uniqueId   String   @default(uuid())
@@ -38,5 +39,5 @@ model Post {
   isPublished Boolean  @default(false)
   views       Int      @default(0)
 
-  @@map("posts")
+  @@map("JPost")
 }

@@ -13,8 +13,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   if (req.method === 'GET') {
     const post = await prisma.post.findUnique(
       {
-        where: { id: postId },
-      }
+        where: { id: postId }
+      },
     );
     res.json(post);
   } 
