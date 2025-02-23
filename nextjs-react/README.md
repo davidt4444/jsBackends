@@ -10,6 +10,9 @@ set environment variable for database
 source ../../../aws-resources/localhost-mac-js.sh
 npx prisma migrate dev --name init
 
+For sql queries
+npx prisma generate --sql
+
 To update
 https://kristenkinnearohlmann.dev/prisma-add-field-to-model/
 Update schema.prisma
